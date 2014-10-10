@@ -1,9 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.Web", "ContosoUniversity.Web\ContosoUniversity.Web.csproj", "{5A15D2ED-BF5E-4778-940F-C30BAB55EAC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity.Core", "ContosoUniversity.Core\ContosoUniversity.Core.csproj", "{6FB1A3F5-D55E-4808-A479-A639FC6798CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{835B2D2C-5E34-4FB6-ACB4-437C2E425BFF}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +24,10 @@ Global
 		{5A15D2ED-BF5E-4778-940F-C30BAB55EAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A15D2ED-BF5E-4778-940F-C30BAB55EAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A15D2ED-BF5E-4778-940F-C30BAB55EAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB1A3F5-D55E-4808-A479-A639FC6798CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB1A3F5-D55E-4808-A479-A639FC6798CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB1A3F5-D55E-4808-A479-A639FC6798CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB1A3F5-D55E-4808-A479-A639FC6798CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
