@@ -19,8 +19,8 @@ namespace ContosoUniversity.Core.Data
             if (command.Parameters.Count > 0 && command.Parameters[0].Value.ToString() == "Throw")
             {
                 throwTransientErrors = true;
-                command.Parameters[0].Value = "an";
-                command.Parameters[1].Value = "an";
+                command.Parameters[0].Value = "%an%";
+                command.Parameters[1].Value = "%an%";
             }
 
             if (throwTransientErrors && _counter < 4)

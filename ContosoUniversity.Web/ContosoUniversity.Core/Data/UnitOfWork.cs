@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 
 namespace ContosoUniversity.Core.Data
 {
@@ -26,7 +26,7 @@ namespace ContosoUniversity.Core.Data
             return TryDbAction(() => _context.Set<T>().Find(id));
         }
 
-        public IEnumerable<T> All<T>() where T : class
+        public IQueryable<T> All<T>() where T : class
         {
             return TryDbAction(() => _context.Set<T>());
         }

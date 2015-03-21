@@ -55,6 +55,7 @@ namespace ContosoUniversity.Core.Data
             base.ReaderExecuting(command, interceptionContext);
             _stopwatch.Restart();
         }
+
         public override void ReaderExecuted(DbCommand command, DbCommandInterceptionContext<DbDataReader> interceptionContext)
         {
             _stopwatch.Stop();

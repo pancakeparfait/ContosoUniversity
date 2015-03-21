@@ -197,6 +197,14 @@
     <Compile Include="Migrations\201410080628044_InitialCreate.Designer.cs">
       <DependentUpon>201410080628044_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201410292135272_MaxLengthOnNames.cs" />
+    <Compile Include="Migrations\201410292135272_MaxLengthOnNames.Designer.cs">
+      <DependentUpon>201410292135272_MaxLengthOnNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201410292138091_ColumnFirstName.cs" />
+    <Compile Include="Migrations\201410292138091_ColumnFirstName.Designer.cs">
+      <DependentUpon>201410292138091_ColumnFirstName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CourseModel.cs" />
@@ -216,6 +224,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\contoso-u.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -228,7 +237,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -282,6 +293,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201410080628044_InitialCreate.resx">
       <DependentUpon>201410080628044_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410292135272_MaxLengthOnNames.resx">
+      <DependentUpon>201410292135272_MaxLengthOnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201410292138091_ColumnFirstName.resx">
+      <DependentUpon>201410292138091_ColumnFirstName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+using System.Linq;
 using ContosoUniversity.Core.Data;
 using ContosoUniversity.Core.Data.Entities;
 
@@ -26,7 +26,7 @@ namespace ContosoUniversity.Core.Lib.Services.Impl
             });
         }
 
-        public IEnumerable<Student> GetAll()
+        public IQueryable<Student> GetAll()
         {
             return UnitOfWork.All<Student>();
         }

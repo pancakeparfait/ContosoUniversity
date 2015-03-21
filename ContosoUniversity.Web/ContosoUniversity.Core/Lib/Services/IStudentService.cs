@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Linq;
 using ContosoUniversity.Core.Data.Entities;
 
 namespace ContosoUniversity.Core.Lib.Services
@@ -7,6 +7,6 @@ namespace ContosoUniversity.Core.Lib.Services
     public interface IStudentService : IEntityService
     {
         Student InsertOrUpdateStudent(int id, string lastName, string firstMidName, DateTime enrollmentDate);
-        IEnumerable<Student> GetAll();
+        IQueryable<Student> GetAll();
     }
 }

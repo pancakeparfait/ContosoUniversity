@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using ContosoUniversity.Core.Data.Entities;
 
@@ -7,7 +6,7 @@ namespace ContosoUniversity.Core.Lib.Extensions
 {
     public static class EnumerableExtensions
     {
-        public static IEnumerable<Student> SearchBy(this IEnumerable<Student> source, string searchString)
+        public static IQueryable<Student> SearchBy(this IQueryable<Student> source, string searchString)
         {
             if (!String.IsNullOrEmpty(searchString))
             {
@@ -17,7 +16,7 @@ namespace ContosoUniversity.Core.Lib.Extensions
             return source;
         }
 
-        public static IEnumerable<Student> OrderBy(this IEnumerable<Student> source, string sortOrder)
+        public static IQueryable<Student> OrderBy(this IQueryable<Student> source, string sortOrder)
         {
             switch (sortOrder)
             {

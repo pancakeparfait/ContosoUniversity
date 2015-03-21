@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Linq;
 
 namespace ContosoUniversity.Core.Data
 {
@@ -6,7 +6,7 @@ namespace ContosoUniversity.Core.Data
     {
         T Get<T>(object id) where T : class;
 
-        IEnumerable<T> All<T>() where T : class;
+        IQueryable<T> All<T>() where T : class;
 
         T Add<T>(T entity) where T : class;
 
