@@ -1,4 +1,6 @@
-﻿namespace ContosoUniversity.Core.Data.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ContosoUniversity.Core.Data.Entities
 {
     public enum Grade
     {
@@ -8,11 +10,16 @@
     public class Enrollment
     {
         public int EnrollmentId { get; set; }
+
         public int CourseId { get; set; }
+
         public int StudentId { get; set; }
+
+        [DisplayFormat(NullDisplayText = "No grade")]
         public Grade? Grade { get; set; }
 
         public virtual Course Course { get; set; }
+
         public virtual Student Student { get; set; }
     }
 }

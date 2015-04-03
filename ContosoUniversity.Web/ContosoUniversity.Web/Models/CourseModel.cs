@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ContosoUniversity.Web.Models
+﻿namespace ContosoUniversity.Web.Models
 {
     public class CourseModel
     {

@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Entities\Course.cs" />
+    <Compile Include="Data\Entities\Department.cs" />
     <Compile Include="Data\Entities\Enrollment.cs" />
     <Compile Include="Data\Entities\Instructor.cs" />
     <Compile Include="Data\Entities\OfficeAssignment.cs" />
@@ -71,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
